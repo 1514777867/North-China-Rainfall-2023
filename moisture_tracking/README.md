@@ -60,12 +60,6 @@ https://doi.org/10.5281/zenodo.22812836
 
 The archived source-mask directories correspond to:
 
-- All
-- Bay of Bengal
-- India
-- South China
-- South China Sea
-- Western Pacific
 
 ## Data availability
 
@@ -88,3 +82,11 @@ https://doi.org/10.5194/esd-9-167-2018
 ## Notes
 
 Users who wish to reproduce the moisture-tagging setup may need to modify local file paths in `3Dsource.py` and `trmask3Dn.py` according to their own computing environment.
+
+The complete raw WRF output files are not archived in this repository or on Zenodo because of their large total data volume (approximately 2.6 TB). The processed datasets and figure-source data required to support the analyses and figures presented in the manuscript are publicly available through the associated Zenodo record:
+
+https://doi.org/10.5281/zenodo.22812836
+
+Researchers who require access to the complete raw WRF output files for additional analyses may contact the corresponding author to discuss data transfer, subject to storage and transfer limitations:
+
+Email: [1514777867@qq.com]
