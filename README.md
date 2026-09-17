@@ -6,9 +6,6 @@ This repository contains the WRF model configuration, moisture-tracking setup, s
 
 The corresponding source-region masks, shapefiles, processed datasets, and figure-source data used to support the manuscript are publicly archived on Zenodo.
 
-**Zenodo dataset:**  
-https://doi.org/10.5281/zenodo.22812836
-
 ## Overview
 
 The study investigates the contribution of terrestrial and oceanic moisture sources to the 2023 extreme rainfall event over North China using the Weather Research and Forecasting (WRF) model and the WRF-WVTs moisture-tagging framework.
@@ -54,6 +51,20 @@ Because of the very large storage and transfer requirements, the complete raw wr
 Instead, the processed datasets and figure-source data required to support the analyses, figures, and conclusions presented in the manuscript are publicly archived on Zenodo
 
 Researchers who require access to the complete raw WRF output files for additional analyses may contact the author to discuss possible data transfer, subject to storage and transfer limitations.
+
+## Software archive
+
+The version of the model configuration, moisture-tracking scripts, mask-generation scripts, and plotting scripts corresponding to the current manuscript submission is archived on Zenodo.
+
+Software version: v1.0.0
+
+Zenodo DOI:
+
+https://doi.org/10.5281/zenodo.22813474
+
+The associated research data are archived separately at:
+
+https://doi.org/10.5281/zenodo.22812836
 
 ## WRF-WVTs reference
 
