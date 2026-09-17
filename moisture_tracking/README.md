@@ -46,7 +46,7 @@ The resulting `trmask_d01` files are not stored in this GitHub repository becaus
 The WRF-WVTs source-region mask files used in this study are publicly available on Zenodo:
 
 Sun, H. (2026). *Moisture-Tracking Source Masks for the 2023 Extreme Rainfall over North China*. Zenodo.  
-https://doi.org/10.5281/zenodo.22803751
+https://doi.org/10.5281/zenodo.22812836
 
 ## Reference
 
