@@ -15,8 +15,6 @@ The study investigates the contribution of terrestrial and oceanic moisture sour
 
 The moisture-tracking experiments were designed to quantify contributions from several terrestrial and oceanic source regions.
 
-The complete raw WRF output is very large, with a total volume of approximately 2.6 TB. Therefore, the full `wrfout` archive is not stored on GitHub or Zenodo. Instead, the processed datasets and source materials used directly in the manuscript analyses and figures are publicly archived on Zenodo.
-
 ## Plotting scripts
 
 The plotting/ directory contains the NCL scripts used to generate the manuscript figures.
@@ -41,21 +39,7 @@ Figures 1, 2, 4, 5, 7, 8, 9, 10, and 11 were generated primarily using the NCAR 
 
 Figures 3 and 6 were generated using Origin from the corresponding Excel source data.
 
-## Figure source data
-
 The datasets supporting the figures and quantitative analyses presented in the manuscript are publicly archived on Zenodo.
-
-The archived materials include, where applicable:
-
-- geographical shapefiles;
-- Excel source data used for Origin-generated figures;
-- NetCDF source data;
-- CSV source data;
-- processed WRF model fields;
-- processed precipitation data;
-- processed moisture-tracking data;
-- WRF-WVTs source-region mask files; and
-- other derived datasets used directly in the manuscript figures and analyses.
 
 ## Raw WRF output
 
