@@ -1,15 +1,17 @@
 # Moisture Tracking
 
-Moisture source tracking in this study was performed using the WRF-WVTs moisture tagging framework coupled with the Weather Research and Forecasting (WRF) model.
+Moisture-source tracking in this study was performed using the WRF-WVTs moisture-tagging framework coupled with the Weather Research and Forecasting (WRF) model.
 
 WRF-WVTs:  
 https://github.com/damianinsua/WRF-WVTs
 
 ## Source regions
 
-The geographical source regions used for moisture tagging are provided in the `source_regions` directory. These shapefiles define the oceanic and terrestrial moisture-source regions used in the experiments.
+The geographical source regions used for moisture tagging are provided in the `source_regions` directory.
 
-The source regions include:
+These shapefiles define the oceanic and terrestrial moisture-source regions used in the WRF-WVTs experiments.
+
+The source regions considered in this study include:
 
 - All
 - Bay of Bengal
@@ -22,33 +24,67 @@ The source regions include:
 
 The scripts `3Dsource.py` and `trmask3Dn.py` were used to map the geographical source regions onto the WRF model grid and generate the source-region masks required by WRF-WVTs.
 
-Six source-region mask files were generated for the moisture-tracking experiments. To preserve the original configuration used in the simulations, the mask files are stored separately according to their corresponding source regions.
+Six source-region mask files were generated for the moisture-tracking experiments.
 
-The source-region mask files (`trmask_d01`) used in the WRF-WVTs experiments are archived on Zenodo:
-
-https://doi.org/10.5281/zenodo.22803751
+Each experiment used a mask file named `trmask_d01`. To preserve the original filenames used in the simulations, the mask files are stored separately according to their corresponding source regions in the associated Zenodo archive.
 
 ## Files
 
-`3Dsource.py`  
-Used in the preparation of the source-region information for moisture tagging.
+### `3Dsource.py`
 
-`trmask3Dn.py`  
-Used to map the geographical source regions onto the WRF model grid and generate the source-region mask files.
+Used in the preparation of the geographical source-region information required for moisture tagging.
 
-`source_regions/`  
-Contains the shapefiles defining the geographical moisture-source regions used in the experiments.
+### `trmask3Dn.py`
 
-The resulting `trmask_d01` files are not stored in this GitHub repository because of their file size. They are publicly archived in the associated Zenodo dataset.
+Used to map the source-region shapefiles onto the WRF model grid and generate the `trmask_d01` mask files.
+
+### `source_regions/`
+
+Contains the shapefiles defining the moisture-source regions used in the experiments.
+
+A complete shapefile dataset may include:
+
+- `.shp`
+- `.shx`
+- `.dbf`
+- `.prj`
+- `.cpg`, where available
+
+## Source-region mask data
+
+The `trmask_d01` files are not stored directly in this GitHub repository because of their relatively large file sizes.
+
+The six WRF-WVTs source-region mask files, together with related figure-source materials and shapefiles, are publicly archived on Zenodo:
+
+https://doi.org/10.5281/zenodo.22812836
+
+The archived source-mask directories correspond to:
+
+- All
+- Bay of Bengal
+- India
+- South China
+- South China Sea
+- Western Pacific
 
 ## Data availability
 
-The WRF-WVTs source-region mask files used in this study are publicly available on Zenodo:
+The moisture-tracking source masks and associated source-region materials used in this study are publicly available at:
 
-Sun, H. (2026). *Moisture-Tracking Source Masks for the 2023 Extreme Rainfall over North China*. Zenodo.  
+Sun, H. (2026). *Data and Figure Source Materials for the 2023 Extreme Rainfall over North China*. Zenodo.  
 https://doi.org/10.5281/zenodo.22812836
+
+## Related repository
+
+The WRF configuration files, moisture-tracking setup, mask-generation scripts, and plotting scripts used in this study are available in the main GitHub repository:
+
+https://github.com/1514777867/North-China-Rainfall-2023
 
 ## Reference
 
 Insua-Costa, D., & Miguez-Macho, G. (2018). A new moisture tagging capability in the Weather Research and Forecasting model: formulation, validation and application to the 2014 Great Lake-effect snowstorm. *Earth System Dynamics, 9*, 167–185.  
 https://doi.org/10.5194/esd-9-167-2018
+
+## Notes
+
+Users who wish to reproduce the moisture-tagging setup may need to modify local file paths in `3Dsource.py` and `trmask3Dn.py` according to their own computing environment.
